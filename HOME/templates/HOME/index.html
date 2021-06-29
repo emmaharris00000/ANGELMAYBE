@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<link href="{% static 'HOME/HOME.css' %}" rel= "stylesheet">
+<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+<meta charset="UTF-8">
+<title> Navbar </title>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h2><a href="{% url 'HOME' %}">ANGELMAYBE</a></h2>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'HOME' %}">Home Page</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+   
+    <div class="hometext">
+        <a href="{% url 'HOME' %}" ><button type="">//WEAR</button></a>
+        
+    </div>   
+    <div class="hometext">
+        <a href="{% url 'HOME' %}" ><button type="">//US</button></a>
+        
+    </div> 
+    <div class="hometext">
+        <a href="{% url 'HOME' %}" ><button type="">//CONTACT</button></a>
+        
+    </div> 
+
+
+    <div class="s-m">
+        <a href="https://www.instagram.com/emma_____harris/">
+            <img alt="instagram" src="{% static 'HOME/instagram-symbol.png' %}">
+             </a>
+        <a href="https://twitter.com/emma_____harris">
+        <img alt='twitter' src="{% static 'HOME/twitter-symbol.webp' %}">
+        </a>
+        <a href="https://twitter.com/emma_____harris">
+            <img alt='shopify' src="{% static 'HOME/twitter-symbol.webp' %}">
+            </a>
+    </div>
+   
+</body>
+</html>
